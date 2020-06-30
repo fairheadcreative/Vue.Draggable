@@ -622,8 +622,7 @@ const draggableComponent = {
       return onMove(sendEvt, originalEvent);
     },
 
-    onDragEnd(evt) {
-      evt.items.forEach(Sortable.utils.deselect);
+    onDragEnd() {
       this.computeIndexes();
       draggingElement = null;
     }
