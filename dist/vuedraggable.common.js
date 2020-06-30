@@ -2571,8 +2571,8 @@ module.exports = Object.keys || function keys(O) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return removeNode; });
 /* harmony import */ var core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("a481");
 /* harmony import */ var core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _home_divinespear_Documents_workspace_private_Vue_Draggable_node_modules_babel_runtime_corejs2_core_js_object_create__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("4aa6");
-/* harmony import */ var _home_divinespear_Documents_workspace_private_Vue_Draggable_node_modules_babel_runtime_corejs2_core_js_object_create__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_home_divinespear_Documents_workspace_private_Vue_Draggable_node_modules_babel_runtime_corejs2_core_js_object_create__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Users_fedor_Cloud_Projects_Web_austlii_datalex_Vue_Draggable_node_modules_babel_runtime_corejs2_core_js_object_create__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("4aa6");
+/* harmony import */ var _Users_fedor_Cloud_Projects_Web_austlii_datalex_Vue_Draggable_node_modules_babel_runtime_corejs2_core_js_object_create__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Users_fedor_Cloud_Projects_Web_austlii_datalex_Vue_Draggable_node_modules_babel_runtime_corejs2_core_js_object_create__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
@@ -2587,7 +2587,7 @@ function getConsole() {
 var console = getConsole();
 
 function cached(fn) {
-  var cache = _home_divinespear_Documents_workspace_private_Vue_Draggable_node_modules_babel_runtime_corejs2_core_js_object_create__WEBPACK_IMPORTED_MODULE_1___default()(null);
+  var cache = _Users_fedor_Cloud_Projects_Web_austlii_datalex_Vue_Draggable_node_modules_babel_runtime_corejs2_core_js_object_create__WEBPACK_IMPORTED_MODULE_1___default()(null);
 
   return function cachedFn(str) {
     var hit = cache[str];
@@ -3865,8 +3865,7 @@ var draggableComponent = {
 
       return onMove(sendEvt, originalEvent);
     },
-    onDragEnd: function onDragEnd(evt) {
-      evt.items.forEach(external_commonjs_sortablejs_commonjs2_sortablejs_amd_sortablejs_root_Sortable_default.a.utils.deselect);
+    onDragEnd: function onDragEnd() {
       this.computeIndexes();
       draggingElement = null;
     }
@@ -3877,8 +3876,10 @@ if (typeof window !== "undefined" && "Vue" in window) {
   window.Vue.component("draggable", draggableComponent);
 }
 
+
 /* harmony default export */ var vuedraggable = (draggableComponent);
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
+/* concated harmony reexport Sortable */__webpack_require__.d(__webpack_exports__, "Sortable", function() { return external_commonjs_sortablejs_commonjs2_sortablejs_amd_sortablejs_root_Sortable_default.a; });
 
 
 /* harmony default export */ var entry_lib = __webpack_exports__["default"] = (vuedraggable);
